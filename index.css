@@ -6,7 +6,7 @@ body{
 }
 
 .imgtop{
-    background-image: url("images/2.png");
+    background-image: url("2.png");
     background-size: cover;
     /* background-attachment: fixed; */
     height:90vh;
@@ -199,7 +199,7 @@ color: rgb(255, 251, 0);
         /* margin-left: -8px; */
         height: 140vh;
         text-align: center;
-        background-image: url("images/welcom3.jpg");
+        background-image: url("welcom3.jpg");
        background-repeat: no-repeat;
        /* border: 5px double; */
        /* opacity: ; */
@@ -231,20 +231,20 @@ color: rgb(255, 251, 0);
 
     
     #pic1{
-        background-image:url("images/gogo.png") ;
+        background-image:url("gogo.png") ;
         /* background-size: contain; */
        
     }
     #pic2{
-        background-image:url("images/sere1.jpg") ;
+        background-image:url("sere1.jpg") ;
         /* background-size: contain; */
     }
     #pic3{
-        background-image:url("images/otachu.jpg") ;
+        background-image:url("otachu.jpg") ;
         /* background-size: contain; */
     }
     #pic4{
-        background-image:url("images/wando.jpg") ;
+        background-image:url("wando.jpg") ;
         /* background-size: contain; */
     }
   button{
@@ -335,7 +335,7 @@ footer begins here with class:foot-content */
     
     #main-foot{
         /* margin-top: 30%; */
-       background-image: url("images/swing-beach.jpg");
+       background-image: url("swing-beach.jpg");
        background-repeat: no-repeat;
        background-attachment: fixed;
        /* border-bottom: 3px dotted black; */
@@ -425,7 +425,7 @@ header{
 }
       #imgtrust{
         height: 80vh;
-        background-image: url("images/trust3.1.png");
+        background-image: url("trust3.1.png");
         /* background-size: contain; */
         background-size: cover;
       }
@@ -519,7 +519,7 @@ header{
     }
   
     .imgtop {
-      background-image: url("images/2.png");
+      background-image: url("2.png");
       background-color: #FF0000;
       height: 90vh;
       z-index: 1;

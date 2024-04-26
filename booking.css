@@ -1,0 +1,130 @@
+body{
+    background-image: url("images/book-back2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+ /* background: linear-gradient(to left,yellow,blue); */
+ /* background-color: grey; */
+}
+.header{
+    text-align: center;
+    color: greenyellow;
+    
+}
+legend{
+    color: aliceblue;
+}
+fieldset{
+
+text-align:left;
+margin: 0px;
+
+
+}
+
+#owninfo{
+    margin-left: 10%;
+}
+
+#main-content{
+width: 100%;
+/* padding: 17%; */
+padding-top: 0px;
+/* background-color: aqua; */
+
+
+}
+.main-content{
+    background:linear-gradient(to left, green, blue,green);
+    text-align: center;
+    width: 70%;
+    margin-left: 16%;
+    color: aliceblue;
+    
+}
+.form{
+    width: 80%;
+    margin: 0px;
+    margin-left: 8%;
+    /* font-size:larger; */
+}
+#form1{
+    background:linear-gradient(to right,  rgb(68, 69, 136) , rgb(29, 27, 139), rgb(66, 66, 110));
+  justify-content: space-between;
+  /* background-image: url("book3.jpg"); */
+  background-size: cover;
+}
+#form2{
+    background:linear-gradient(to right,  rgb(68, 69, 136) , rgb(29, 27, 139), rgb(66, 66, 110));
+    /* background-image: url("book3.jpg"); */
+    background-size: cover;
+}
+#form3{
+    color: aliceblue;
+    /* background-image: url("book3.jpg"); */
+    background-size: cover;
+    background:linear-gradient(to right,  rgb(68, 69, 136) , rgb(29, 27, 139), rgb(66, 66, 110));
+}
+#submit{
+    background:linear-gradient(to left, green, blue,green)
+}
+.inputcont input{
+    /* width: 40%; */
+}
+.input{
+ float: right;
+ width: 40%;
+ box-sizing: border-box;
+ border: 2px d yellow;
+ border-radius: 5px;
+ 
+}
+footer{
+    
+  text-align: center;
+    color: goldenrod;
+    /* font-size: x-large; */
+    background:linear-gradient(to left, green, blue,green);
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+.step{
+    display: none;
+}
+
+.step.active{
+    display: block;
+}
+.btn{
+    
+    border: 2px ridge blue;
+    border-radius: 5px;
+width: 15%;
+background-color: brown;
+
+}
+#application{
+    
+    background-color: green;
+    border: 2px solid rgb(0, 55, 128);
+    border-radius: 3px;
+}
+
+#btn1{
+    /* float: left; */
+
+}
+#btn2{
+    margin-right: 10%;
+
+}
+#btn3{
+ margin-left: 10%;
+}
+#btn4{
+ margin-right: 10%;
+}
+#btn5{
+ margin-left: 10%;
+}

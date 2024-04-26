@@ -1,0 +1,211 @@
+body{
+    /* background-color: yellow; */
+    background-image: url("images/logreg1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+   
+}
+#home{
+    /* margin-top: 10%; */
+    background-color: black;
+    border: 4px solid green;
+    border-radius: 10px;
+    width: 50%;
+   height: 80%;
+   color: white;
+}
+#topnav{
+    width: 10%;
+    /* height: 5%; */
+    display: flex;
+    margin-left: 10%;
+    /* background-color: black; */
+    
+}
+#topnav  a{
+    
+    /* width: 70%; */
+    /* margin-top: 30%; */
+   padding: 10px;
+   /* border: 2px solid blue; */
+     /* background-color:black; */
+    display: inline-block;
+    color: white;
+    text-decoration-line: none;
+    border-radius: 3px;
+    background-color:black;
+}
+#signup{
+    /* width: 40%; */
+    margin-left: 0%;
+    
+    margin-left: 40%;
+    /* padding-left: 50px; */
+
+
+}
+
+#topnav a:hover{
+border-radius: 3px;
+/* background-color: green; */
+border-top: 1px solid rgba(255, 255, 255, 0.979);
+border-left: 1px solid rgba(255, 255, 255, 0.911);
+/* border: 2px solid black; */
+/* box-shadow: 4px 4px 4px rgba(190, 15, 97, 0.644); */
+}
+
+#signin{
+    
+    /* width: 40px; */
+    margin-left: 0%;
+    background-color: rgb(172, 157, 21);
+    /* margin-right: 26%; */
+}
+#submit{
+margin-left: 50%;
+border: 2px solid red;
+border-radius: 5px;
+padding: 4px; 
+    background-color: rgb(194, 57, 15);
+    /* margin-left: 20vh; */
+    color: white;
+    text-decoration-line: none;
+}
+
+
+
+/* #mail{
+ width: 20vh;
+ margin-left:  30px;
+} */
+#pass{
+    margin-left: 10px;
+ /* width: 20vh; */
+}
+#nation{
+    margin-left: 40px;
+    /* width: 20vh; */
+}
+
+
+
+#res{
+    border-radius: 5px;
+    margin-right: 10%;
+    color: ghostwhite;
+    background-color: rgb(37, 18, 206);
+ /* margin-right: 20%; */
+}
+
+#res:hover{
+    background-color: rgb(94, 23, 23);
+   
+}
+#submit:hover{
+    background-color: green;
+    
+}
+
+#sub{
+    border-radius: 5px;
+   /* margin-left: 30%; */
+   background-color: rgb(37, 18, 206);
+   color: ghostwhite;
+}
+#btn{
+    
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+}
+#btn li{
+    border: 2px solid rgb(36, 10, 179);
+}
+
+.input{
+    float:  right;
+    width: 40%;
+    /* box-sizing: border-box; */
+    border: 2px a blue;
+    border-radius: 5px;
+    
+}
+
+#head{
+    color: blue;
+    /* border: 2px solid red; */
+    
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+#content{
+    height: 50%;
+      width: 70%;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    /* margin-top: 5vh; */
+    margin-left: 3vh;
+    text-align: center;
+    font-weight: bold;
+    /* margin-bottom: 10vh; */
+    padding: 10px;
+}
+#next-tab{
+    background:linear-gradient(to left, black,black);
+    width: 70%;
+    border: 4px solid yellow;
+    color: white;
+    border-radius: 10px;
+}
+
+#main{
+    /* margin-top: 60px; */
+    /* background-color: rgb(66, 66, 189); */
+}
+footer{
+    color: yellow;
+}
+
+#print{
+    color: red;
+    height: 6vh;
+    /* background-color: aliceblue; */
+}
+#mess{
+    border: 2px solid rgba(255, 255, 255, 0.555);
+    padding: 15px;
+    background-color: #2eb332;
+    border-radius: 5px;
+}
+.messageBox {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background:transparent;
+    border: 2px solid rgba(245, 245, 245, 0.096);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  #forgot{
+  color: red;
+  margin-right: 45%;
+
+  }
+  .strength-bar {
+    width: 200px;
+    height: 20px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.fill {
+    height: 100%;
+    transition: width 0.3s ease;
+  }

@@ -1,0 +1,57 @@
+/* THE SCENARIES TABLE BEGINS HERE. */
+body{
+    background-image: url("images/trust1.jpg");
+    background-size: cover;
+}
+#tb{
+    margin-top: 5%;
+    width: 70%;
+    display: flex;
+    background-color: rgb(44, 153, 86);
+    /* position: relative; */
+}
+
+ table{
+text-align: center;
+border-radius: 1px;
+/* margin-top:0px; */
+width: 90%;
+height: 50vh;
+/* margin: 0% 0% 0% -8px; */
+/* background: linear-gradient( to left, red,blue,green); */
+margin: 10%;
+
+}
+
+
+
+
+caption{
+    /* background: linear-gradient( to left, red,blue,green); */
+font-size:x-large;
+height: 5vh;
+/* margin: 0px; */
+
+margin-bottom: 0px;
+
+
+}
+
+table tr th{
+    background-color: rgb(248, 12, 12);
+}
+ table tr th a{
+    display: inline-block;
+    text-decoration-line: none;
+    color: yellow;
+    
+   
+    /* padding-left: 12.3vh;
+    padding-right:12.3vh ;
+    */
+}
+      table tr th:hover{
+color: rgb(3, 3, 3);
+background-color: rgb(25, 143, 35);
+
+    }

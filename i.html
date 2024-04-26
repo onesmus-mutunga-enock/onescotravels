@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Checker</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    .strength-bar {
+      width: 200px;
+      height: 10px;
+      border: 1px solid #000;
+      margin-top: 10px;
+      position: relative;
+      border-radius: 10px;
+    }
+
+    #togglePassword{
+
+        cursor: pointer;
+    }
+    .fill {
+      height: 100%;
+      transition:  1s ease-in;
+      border-radius: 10px;
+    }
+
+
+
+    .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 30%;
+  width: 20%;
+
+}
+
+.dropdown-btn {
+  cursor: pointer;
+  
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #9a93c2c7;
+  /* width: 10%; */
+  padding: 12px 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5%;
+  
+}
+.dropdown-content ul {
+
+  
+  text-align: center;
+  
+  /* margin-right: 20%; */
+}
+.dropdown-content a{
+  text-decoration-line: none;
+}
+
+
+.dropdown:hover .dropdown-content,
+.dropdown-btn.active + .dropdown-content {
+  display: block;
+}
+   
+  </style>
+</head>
+<body>
+
+  
+  <input type="password" id="password" oninput="checkPasswordStrength()">
+  <input type="checkbox" id="togglePassword" onclick="togglePasswordVisibility()">show password</input>
+  <div class="strength-bar" id="strengthBar">
+    <div class="fill" id="fill"></div>
+</div>
+
+  <script>
+    function checkPasswordStrength() {
+      var password = document.getElementById('password').value;
+      var fill = document.getElementById('fill');
+      var strength = 0;
+
+      if (password.length === 0) {
+    fill.style.width = '0%';
+    return;
+  }
+      // Define your criteria for password strength using regular expressions
+      var levels = [
+  { regex: new RegExp("^(?=.{1,}).*$"), color: '#FF0000' }, // Very Weak
+  { regex: new RegExp("^(?=.{6,}).*$"), color: '#FF4500' }, // Weak
+  { regex: new RegExp("^(?=.{8,})(?=.*[a-z])(?=.*[A-Z]).*$"), color: '#FFA500' }, // Fair
+  { regex: new RegExp("^(?=.{10,})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$"), color: '#FFFF00' }, // Good
+  { regex: new RegExp("^(?=.{12,})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\\W).*$"), color: '#ADFF2F' }, // Strong
+  { regex: new RegExp("^(?=.{16,}).*$"), color: '#32CD32' } // Very Strong
+];
+
+      for (var i = 0; i < levels.length; i++) {
+        if (levels[i].regex.test(password)) {
+          fill.style.width = ((i + 1) / levels.length) * 100 + '%';
+          fill.style.backgroundColor = levels[i].color;
+          return;
+        }
+      }
+    }
+
+//     var debounceTimer;
+
+// function onInputDebounced() {
+//   clearTimeout(debounceTimer);
+//   debounceTimer = setTimeout(checkPasswordStrength, 500); // Adjust the delay as needed (e.g., 500 milliseconds)
+// }
+
+// document.getElementById('password').addEventListener('input', onInputDebounced);
+
+    function togglePasswordVisibility() {
+      var passwordInput = document.getElementById('password');
+      var togglePasswordButton = document.getElementById('togglePassword');
+      
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        togglePasswordButton.textContent = 'Hide Password';
+      } else {
+        passwordInput.type = 'password';
+        togglePasswordButton.textContent = 'Show Password';
+      }
+    }
+  </script>
+
+
+
+
+<form action="reg.php" method="post">
+<input type="color" name="yellow" id="">
+  <button type="submit">submit</button>
+</form>
+
+
+<div class="dropdown">
+  <div class="dropdown-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="dropdown-content">
+    <ul type="none">
+      <li><a href="logout.php"><b>End session</b></a></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasher</title>
+</head>
+<body>
+     <input type="text" name="" id="input">
+   <p id="output"></p> 
+   <script>
+ var key=document.getElementById(input).value;
+
+    $outkey= password_hash($key, PASSWORD_BCRYPT);
+
+    document.getElementById(output).innerhtml= $outkey;
+console.log($outkey);
+
+   </script>
+
+
+</body>
+</html>

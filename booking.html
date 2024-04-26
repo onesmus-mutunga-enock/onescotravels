@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking site</title>
+    <link rel="stylesheet" href="booking.css">
+   
+    <script  src="multistep.js"></script>
+</head>
+<body>
+    <div id="main-content">
+    <div class="main-content">
+
+
+<form action="" method="post" id="">
+  <div class="header">
+    <h1>WELCOME !!!! THIS IS ONESCO BOOKING  SITE</h1>
+  </div> 
+
+
+  <div id="step-1" class="step active">
+  <form> 
+    <fieldset id="form1" class="form">
+        <legend>
+            <h3>PERSONAL DETAILS</h3>
+        </legend>
+    
+        <div id="owninfo">
+     Enter site name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     <input type="text"  class="input" ><br><br>
+     Number of touring days:  &nbsp; 
+     <input type="text" class="input"><br><br>
+     Who will accompany you? 
+      <select name="" id="" class="input"> required
+        <option value=""> none</option>
+        <option value="">family</option>
+        <option value="">friends</option>
+        <option value="">group people</option>
+        <option value="">massive number of people</option>
+     </select>
+     <!-- when the traveller selects any of the options above only the one related to the selection above should appear -->
+    <br><br>
+    For family please select <select name=""  class="input">
+        <option value="n"></option>
+        <option value="">with wife/husband</option>
+        <option value="">with wife/husband and  kid/kids</option> 
+        <option value="">with kids </option>
+        <option value="">kids</option>
+     </select><br><br>
+     Please provide finer details about family and how many in number who will be visiting
+    <textarea   class="input">write here</textarea><br>
+     <br>
+    <br>For friends please select <select name="" id=""  class="input">
+        <option value="">with  1 friend</option>
+        <option value="">with  2 friends</option></select><br> <br>
+        enter number of friends:
+        <input type="number"  class="input"><br>
+     <br>
+     For group please select <select name="" id=""  class="input">
+        <option value="">10 people</option>
+        <option value="">20 people</option></select><br> 
+        <br>Enter the size of group (max 30 people):
+        <input type="number"  class="input">
+     <br>
+     <br>For massive  
+        Enter total number (min:30)(max:1000):
+        <input type="number"  class="input">
+     <br>
+     <br><button type="reset"> click to reset </button>
+    </div>
+    </fieldset><br>
+    </form>
+    <button type="button" onclick="nextStep()"class="btn" id="btn1"><b>Next</b></button>
+  </div>
+
+
+<!-- PAYMENTS -->
+
+
+
+<div id="step-2" class="step">
+<form >
+<fieldset id="form2" class="form">
+
+    <legend><h3>PAYMENT IS DONE HERE</h3></legend>
+    we are stipident at providing security and keeping all your transaction data secure <br>
+    <div id="owninfo">
+    choose place of origin:
+    <select name="" id=""  class="input">
+        <option value="">kenya</option>
+        <option value="">within Africa</option>
+         <option value="">USA </option> 
+        <option value="">Other Nationalities</option>
+    </select> <br><br>
+    You will complete your transactions using <input type="number"  class="input"><br><br>
+
+    Total amount  payable is: <input type="number"  class="input"><br><br>
+    Do you require a translator?:
+    <select name="" id=""  class="input">
+        <option value="">yes</option>
+        <option value="">no</option>
+    </select><br><br>
+    if yes Additional charges of <input type="number"  class="input"><br><br>
+    <br><button type="reset">click to reset</button><br><br>
+    
+</form>
+<form>
+   
+    <fieldset id="form22" class="form">
+        <legend>choose whether you will use any of the services mentioned below</legend>
+        <div id="owninfo">
+        <input type="checkbox" name="" id=""> accomodation <br>
+        <input type="checkbox" name="" id=""> health insurance <br>
+        <input type="checkbox" name="" id=""> all travels <br>
+        <input type="checkbox" name="" id=""> training <br>
+        <input type="checkbox" name="" id=""> information relay <br><br><br>
+        <button type="reset">click to reset</button><br>
+        </div>
+    </fieldset>
+</fieldset>
+</form>
+<button type="button" onclick="prevStep()"class="btn" id="btn2"><b>back</b></button>
+<button type="button" onclick="nextStep()" class="btn" id="btn3"><b>next</b></button>
+</div>
+
+
+<!-- CONFIRM PAYMENT BEGINS HERE -->
+<div id="step-3" class="step">
+<form >
+    <fieldset class="form" id="form3">
+        <legend>CONFIRM PAYMENT</legend>
+        <div id="owninfo">
+     <h4>TOTAL MONEY PAYABLE IS: <input type="number"  class="input"><br><br><br>
+     CARD number:<input type="number"  class="input"> <br><br>
+     M-PESA  number: <input type="number"  class="input"><br><br>
+     WEST UNION: <input type="number"  class="input"><br><br>
+
+     CRYPTO WALLET: <input type="number"  class="input"><br><br>
+     FINGO AFRICA: <input type="number"  class="input"><br><br>
+     AFRI BANK <input type="number"  class="input"><br>
+    </h4>
+     <button type="reset">click to reset</button>
+     </div>
+</fieldset>
+</form>
+<button type="button" onclick="prevStep()" class="btn"id="btn4"><b>back</b></button>
+<button type="button" onclick="submit()" class="btn" id="btn5"><b>next</b></button>
+<div id="submit">
+<h3>DONE FILLING DETAILS ?</h3>
+<button type="submit" id="application"><b>SUBMIT</b></button>
+
+</div>
+</div>
+
+</form> 
+
+
+
+<footer> &nbsp; &copysr;  we appreciate your time and readiness  to explore with us <br>
+             &nbsp;&copy; 2024  ONESCO limited
+</footer>
+ </div></body>
+</html>

@@ -1,0 +1,577 @@
+body{
+    background: linear-gradient(to right, rgb(45, 45, 105),rgb(182, 182, 59));
+    margin: 0;
+    width: 100%;
+    /* width:max-content; */
+}
+
+.imgtop{
+    background-image: url("images/2.png");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height:90vh;
+    z-index: 1;
+}
+
+#header{
+    /* position: fixed; */
+    /* background-color:WHITE; */
+    width: 100%;
+    /* z-index: 1; */
+    height: max-content;
+    
+}
+.onesco{
+    /* background-color: brown; */
+width: 100%;
+/* margin-left: -8px; */
+color: black;
+display: flex;
+
+padding: 0px;
+
+}
+
+
+#agency{
+    width:20%;
+/* padding: 5px; */
+border: 1px solid black;
+/* background-image: url("welcome2.jpg"); */
+/* background-size: 100%; */
+}
+
+  #logo{
+    /* display: inline-block; */
+width:100%;
+
+/* height:25vh;
+margin: 0px;
+padding: 0%;
+border-radius: 1px;
+color: yellow;
+border: 1px solid; */
+
+} 
+
+
+
+#topnav{
+    width: 100%;
+
+    display: flex;
+   position: fixed;
+   background:linear-gradient(to left, rgb(56, 56, 163), rgb(3, 3, 99));
+   border-bottom: 1px dotted yellow;
+}
+
+
+ #navright ul li a , #navleft ul li a {
+
+padding: 1px;
+margin: 5px;
+text-decoration-line: none;
+color: rgb(255, 251, 0);
+}
+
+    #navleft ul li:hover{
+        background-color: crimson;
+
+    }
+    #navright ul li:hover{
+        background-color: crimson;
+
+    }
+
+
+#navleft ul li, #navright ul li{
+
+   /* display: flex; */
+    background-color: black;
+    border: 1px solid red;
+    margin: 3px;
+    
+    padding: 3px;
+    border-radius: 10px;
+     /* borde */
+}
+
+#navright ul li {
+    display: inline-block;
+    /* margin-left: 0px; */
+   
+    /* borde */
+}
+
+
+#mid ul li{
+
+    display:inline-block;
+    
+    
+}
+#navleft ul li{
+    display: inline-block;
+    
+}
+#navleft{
+    padding: 0px;
+    display: flex;
+    /* float: right; */
+    /* background-color: aqua; */
+    width: 25%;
+   
+    }
+
+    #mid{
+     width: 60%;
+        display:flex;
+        color: yellow;
+        /* background-color: yellow; */
+    }
+    #navright{
+        display: flex;
+        /* background-color: aqua; */
+        width: 20%;
+        /* margin:10 px; */
+        
+        
+        } 
+    #bknow{
+       align-self: center;
+       /* margin:254.5px; */
+       /* margin-left: 080px; */
+       background-color: brown;
+       position: fixed;
+       /* font-size: x-large; */
+
+    }
+/* drop down icon starts here */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 30%;
+  width: 20%;
+
+}
+
+.dropdown-btn {
+  cursor: pointer;
+  
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #9a93c2c7;
+  /* width: 10%; */
+  padding: 12px 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5%;
+  
+}
+.dropdown-content ul {
+
+  
+  text-align: center;
+  
+  /* margin-right: 20%; */
+}
+.dropdown-content a{
+  text-decoration-line: none;
+}
+
+
+.dropdown:hover .dropdown-content,
+.dropdown-btn.active + .dropdown-content {
+  display: block;
+}
+
+/* the trends content begin here with  4 sections: stories, offers,news,videos and audio */
+
+    .trend{
+        /* background-color: rgba(32, 6, 2, 0.821); */
+        width: 100%;
+        /* margin-left: -8px; */
+        height: 140vh;
+        text-align: center;
+        background-image: url("images/welcom3.jpg");
+       background-repeat: no-repeat;
+       /* border: 5px double; */
+       /* opacity: ; */
+    }
+     
+
+    #story {
+      display:flex;
+      width: 100%;
+      height: 50%;
+      /* padding-left: 10px;
+      padding-right: 10px; */
+     color: rgb(43, 11, 184);
+     text-align: center;
+     /* margin-bottom: 0px; */
+     /* background-color: rgb(15, 17, 17); */
+    }
+    .pic{
+     width: 50%;
+     height: 80%;
+     background-size: cover;
+     margin: 40px;
+     margin-left: 0px;
+     /* margin-right:40px ;
+     margin-top: 0px;
+     margin-bottom: 0px; */
+  
+    }
+
+    
+    #pic1{
+        background-image:url("images/gogo.png") ;
+        /* background-size: contain; */
+       
+    }
+    #pic2{
+        background-image:url("images/sere1.jpg") ;
+        /* background-size: contain; */
+    }
+    #pic3{
+        background-image:url("images/otachu.jpg") ;
+        /* background-size: contain; */
+    }
+    #pic4{
+        background-image:url("images/wando.jpg") ;
+        /* background-size: contain; */
+    }
+  button{
+    float: right;
+    background-color: rgba(231, 19, 19, 0.918);
+    width: 20vh;
+    height: 5vh;
+    margin: 10px;
+    margin-right: 0px;
+  }
+  
+.pic button:hover{
+      background:linear-gradient(to left,  red, coral);
+
+}
+    #offer{
+        /* border: 1px solid; */
+        width:100%;
+        height: 50%;
+        display: flex;
+        
+    }
+    
+    #video{
+        margin-top: 20px;
+        /* border: 4px solid; */
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        
+    }
+    .vid{
+        /* border: 2px solid; */
+        margin: 10px;
+        width: 40%;
+   background-color:silver;
+   text-align: center;
+    }
+   #vid1{
+     width:40%;
+     
+   }
+   #vid2{
+   width: 40%;
+   }
+
+    #aud1{
+        margin-top:10px;
+        margin-bottom: 40px;
+        width: 20%;
+    background-color:rgb(37, 33, 33);
+    text-align: center;
+    /* padding-bottom: 10px; */
+    padding: 8% 20px;
+    /* height: 10%; */
+    color: white;
+    /* width: %; */
+    }
+    #aud11{
+        width: 100%;
+        z-index: 0.1;
+        background: transparent;
+        
+    }
+
+    
+ /* there is a div  that holds the footer and the other documents:main-foot
+footer begins here with class:foot-content */
+
+    .foot_content{
+      display: flex;
+      width: 100%;
+
+
+    }
+    .foot_content.foot{
+      /* display: block;
+        float: left; */
+      text-align:left;
+      padding: 15vh;
+      padding-top: 0vh;
+      padding-bottom: 0vh;
+      width: 25%;
+     
+
+
+    }
+    
+    #main-foot{
+        /* margin-top: 30%; */
+       background-image: url("images/swing-beach.jpg");
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       /* border-bottom: 3px dotted black; */
+       /* background-size: contain; */
+       background-size: cover;
+        /* background-color: rgb(7, 170, 15); */
+       
+    }
+    #link{
+       width: 25%;
+    }
+    #handle{
+        width: 25%;
+    
+    }
+    #handle11  li a{
+        /* text-decoration: none ; */
+        text-decoration-line: none;
+    }
+    #handle11  li a:hover{
+        color: red;
+    }
+    #info{
+        width: 25%;
+    }
+
+    #site{
+        width: 25%;
+        
+    }
+
+      #link ul li a{
+        text-decoration: none;
+        
+    }
+
+    #copyright{
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    hr{
+        background-color: purple;
+    }
+    hr:hover{
+      height: 1vh;
+    background-color:red;
+    }
+    #help{
+        /* border: 2px solid black ; */
+        width: 25%;
+        padding: 2px;
+        text-align: center;
+        border-bottom:3px solid blue;
+        background-color:green;
+        color:white;
+        border-radius: 5px;
+    }
+    #help:hover{
+        /* border: 2px solid red; */
+        color:black;
+        background-color:blue;
+        border-bottom: 4px solid green;
+    }
+    
+
+    .float{
+        float: left;
+    }
+     /* TABULAR DISPLAY CENTER POINT CSS */
+
+  /* .tab-display{
+    display: none;
+  }
+  .tab-display.active{
+    display: block;
+  } */
+
+
+
+
+
+    /* OUR TRUST HERE */
+header{
+
+    margin-top: -23px;
+}
+      #imgtrust{
+        height: 80vh;
+        background-image: url("images/trust3.1.png");
+        /* background-size: contain; */
+        background-size: cover;
+      }
+
+    #next-tab{
+        /* margin-top: -10px; */
+        /* text-align: center; */
+        background-color: rgb(48, 56, 121);
+        color: rgb(167, 235, 10);
+       
+        margin-top: 0px;
+        height: fit-content;
+        margin-bottom: -15px;
+    }
+    fieldset legend {
+        text-align: center;
+        color: yellow;
+    }
+    .service{
+        /* border: 2px solid red; */
+        width: 100%;
+        /* height: 30vh; */
+        /* background-color: cyan; */
+    }
+
+    .service a{
+        text-decoration-line: none;
+         color: yellow;
+        background-color: black;
+        border: 1px solid red;
+        border-radius: 5px;
+        padding: 3px;
+    }
+    .service h4{
+        color: rgb(247, 119, 15);
+    }
+    #why-choose-us{
+        width: 100%;
+        /* background-color: gray; */
+    }
+    #about{
+        /* background-color: grey; */
+        height: 25vh;
+    }
+    #contact{
+        text-align: center;
+        /* background-color: aqua; */
+        margin-bottom: 0px;
+    }
+    #contact ul li{
+         display: flex;
+    }
+    
+    #contact ul li a{
+      
+        color: yellow;
+    }
+
+    #contact ul li a:hover{
+      
+        color: red;
+    }
+    
+
+    .fa fa-envelope{
+        color: yellow;
+        background-color: yellow;
+        /* display: inline-block; */
+        
+    }
+    ul li h4{
+        text-shadow: 2px 2px 4px #FF0000;
+        /* background: linear-gradient(45deg,black, #9198e5); */
+        -webkit-background-clip: text content-box;
+        /* color: ; */
+    }
+
+
+    /* MEDIA QUERIES */
+
+    /* Styles for screen width up to 322px */
+@media only screen and (max-width: 322px) {
+    #topnav {
+      background: linear-gradient(to left, rgb(185, 82, 12), rgb(168, 16, 92));
+    }
+  
+    #navleft {
+      padding: 0;
+      display: flex;
+      width: 30%;
+    }
+  
+    .imgtop {
+      background-image: url("images/2.png");
+      background-color: #FF0000;
+      height: 90vh;
+      z-index: 1;
+    }
+  
+    .pic button {
+      float: right;
+      background-color: rgba(163, 197, 13, 0.918);
+      width: 30vh;
+      height: 6vh;
+      margin-right: 0;
+    }
+  }
+  
+  /* Styles for screen width from 500px and above */
+  @media only screen and (min-width: 500px) {
+    .pic button {
+      float: right;
+      background-color: red;
+      /* width: 30vh; */
+      height: 6vh;
+      margin-right: 0;
+    }
+  }
+  
+  /* Styles for screen width from 750px and above */
+  @media only screen and (min-width: 750px) {
+    .pic button {
+      /* /* float: right; */
+      background-color: rgba(33, 156, 8, 0.918);
+      /* width: 50vh; */
+      /* height: 9vh; */
+      margin-right: 0; 
+    }
+  }
+  
+  /* Styles for screen width from 1439px and above */
+  @media only screen and (min-width: 1439px) {
+    .pic button {
+      float: right;
+      background-color: rgba(136, 23, 102, 0.918);
+      width: 40vh;
+      height: 8vh;
+      margin-right: 0;
+    }
+  }
+  
+  /* Styles for screen width up to 424px */
+  @media only screen and (max-width: 424px) {
+    #pic3, #pic4 {
+      display: none;
+    }
+  
+    
+  }

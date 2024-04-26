@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onesco details</title>
+    <link rel="stylesheet" href="logreg.css">
+    <script src="multistep.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="topnav" type="none">
+             <a href="#" onclick="showTab('home')"  id="signin">login</a>
+             <a href="#" onclick="showTab('next-tab')" id="signup">register</a></li>
+             
+        </div>
+
+    <center> <div id="home" class="tab-display">
+          <h2  style=" color: yellow;">This is <b>onesco</b> login page</h2>
+        <form action="login.php" method="post">
+            <div id="content">
+                <h4 id="head"> SIGN IN HERE</h4><br><br>
+                  
+                      Enter email adress: <input type="email" name="email" id="mail"class="input" required> <br><br>
+                      Nationality: <input type="text" name="nation" id="nation"class="input" required><br><br>
+                      Enter password: <input type="password" name="key" id="pass" class="input" required><br><br>
+                      <input type="checkbox" id="togglePassword" onclick="togglePasswordVisibility()">show password</input><br>
+                       <b id="forgot">forgot password?</b>    <br><br><br>
+                      
+                    <button type="reset" id="res">reset</button>
+                     
+                 
+        </ul>
+          </div>
+
+          <ul type="none">
+           
+            <li> <button type="submit" id="submit">submit</button></li>
+        </ul>
+    </form>
+        </div>
+      </center>
+   
+    
+ <center><div id="next-tab" class="tab-display">
+
+    <h2  style=" color: yellow;">This is ONESCO registration page</h2>
+    <form  onsubmit=" return passcheck()" name="regist" method="post" action="register.php">
+        <div id="content">
+            <h4 id="head"> SIGN UP HERE</h4><br><br>
+                   First name: <input type="text" name="Fname" id="" class="input" required> <br><br>
+                 
+                  Last  name: <input type="text" name="Lname" id="" class="input" required><br><br>
+                  ID No/Passport: <input type="text" name="idno" id="" class="input" required><br><br>
+                  Enter email adress: <input type="email" name="email" id="mail"class="input" required> <br><br>
+                  Nationality: <input type="text" name="nation" id="nation"class="input" required><br><br>
+                  Enter password: <input type="password" name="key" id="pass1" class="input" oninput="checkPasswordStrength()" required><br><br> 
+                  Re enter password: <input type="password" name="key2" id="pass2" class="input" required><br><br>
+                  <input type="checkbox" id="togglePassword" onclick="togglePasswordVisibility()">show password</input><br><br>
+                   <input type="checkbox" name="" id="" required > &nbsp; &nbsp; I&nbsp;&nbsp;Agree to <a href="">Terms and conditions</a><br><br>
+                  <div id="print"></div>
+                  <div class="strength-bar" id="strengthBar"></div>
+                  <div class="fill" id="fill"></div>
+
+                  <div class="messageBox" id="successMessage"> <div id="mess">registration Successful</div></div>
+                   </div> <br><br>
+                <button type="reset" id="res">reset</button>
+                
+              
+              
+             
+    </ul>
+    <ul type="none">
+      <li> 
+      <li> <input type="submit"  id="submit" value="submit"></input></li>
+  </ul>
+
+      </div>
+
+      
+</form>
+    
+ </div>
+  <div>
+
+    <footer> &nbsp; &copysr;  we appreciate your time and readiness  to explore with us <br>
+        &nbsp;&copy;  ONESCO limited   &copysr; All rights reserved @ 2024 
+</footer>
+  </div>
+
+
+</center>
+</div>
+
+</body>
+</html>
